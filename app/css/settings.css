@@ -1,0 +1,11 @@
+/*variables*/
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+/*mixins*/
+/*selectors*/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%; }

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*variables*/ 
+
+$blue: #248cec;
+$black: #2a2d32;
+$yellow: #f4b60d;
+$darkgrey: #35383c;
+$lightgrey: #f7f7f7;
+$white: #fff;
+$greyText: #8a8a8a;
+$underlineText: #393c40;
+$wrapper: 1160px;
+
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+/*mixins*/
+
+@mixin ubuntu {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin png_icon($filename) {
+    background-image: url('../img/icons/' + $filename + '.png');
+}
+
+@mixin svg_icon($filename) {
+    background-image: url('../img/icons/' + $filename + '.svg');
+}
+
+@mixin social {
+	background-size: cover;
+    width: 17px;
+    height: 17px;
+}
+
+/*selectors*/
+
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%reset {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+}
+
